@@ -125,7 +125,7 @@ evaluateClasses <- function(modelList) {
     "lme", "glmmPQL",
     "lmerMod", "lmerModLmerTest", "glmerMod",
     "sarlm",
-    "pgls", "phylolm", "phyloglm"
+    "pgls", "phylolm", "phyloglm", "betareg"
   )
 
   if(!all(classes %in% model.classes))
