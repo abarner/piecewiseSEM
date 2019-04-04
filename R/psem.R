@@ -51,6 +51,8 @@ formatpsem <- function(x) {
     names(x)[idx] <- "data"
 
     x$data <- x$data
+    
+    if ("(phi)" %in% colnames(x$data)) x$data <- x$data[-nrow(x$data),-ncol(x$data)]
 
   } else {
     
